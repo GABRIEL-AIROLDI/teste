@@ -7,42 +7,58 @@
      grid-template-rows: repeat(3,auto); 
      grid-template-areas:
      ' header header header'
-     ' main maain main'
+     ' main main main'
 }
-header{
-    height: 500px;
-    background-color: yellow;
+header{ 
+    background-color: rgb(247, 255, 255);
+    height: auto;
     grid-area: header;
   
 }
 main{
     height: 800px;
-    background-color: darkorange;
+    background-color: rgb(255, 37, 37);
     grid-area: main;
 
 }
 footer{
     display: grid;
     height: 200px;
-    background-color: blue;
+    background-color:rgb(240, 240, 40);
     grid-template-columns: repeat(3,33.3%);
     grid-template-rows: repeat(1,auto); 
     grid-template-areas:
-    ' left footer center footer right footer'
+    ' left-footer center-footer right-footer'
 
 }
 .left-footer{
-    background-color: yellowgreen
+    display: grid;
     height:200px;
-    grid-area:left-footer
+    background-color: rgb(76, 208, 76)
 }
 .center-footer{
     display: grid;
     height: auto;
-    background-color: gold;
+    background-color: rgb(244, 255, 255);
 }
 .right-footer{
     display: grid;
     height: auto;
-    background-color: cornflowerblue;
+    background-color: rgb(255, 255, 255)
+}
+#l{
+margin: 8%;
+}
+#c{
+    margin: 8%;
+}
+#r{
+    margin: 8%;
+}
+.main{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 24, 24);
 }
